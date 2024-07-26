@@ -1,0 +1,120 @@
+@import url(global.css);
+section {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  height: 70%;
+  background-color: var(--grey);
+}
+.container .left {
+  background-color: white;
+  height: 100%;
+}
+.container .left img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.container .left .welcome {
+  padding: 0px 20px;
+}
+.container .left .welcome h3 {
+  margin-bottom: 5px;
+}
+.container .left .welcome p {
+  font-family: "poppins regular";
+  font-size: 12px;
+}
+.container .left .welcome button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #2ba5f74f;
+  font-family: "poppins medium";
+  margin-top: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+.container .left .welcome button:hover {
+  background-color: var(--accents);
+  transition: 0.5s ease-in;
+}
+.right {
+  background-color: var(--accents);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.login div,
+.register div {
+  padding: 10px 20px;
+  width: 250px;
+  margin: 15px 0;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+}
+input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  outline: none;
+  font-family: "poppins medium";
+  font-size: 12px;
+  color: white;
+}
+.login {
+  position: absolute;
+}
+.register {
+  transform: translateY(450px);
+}
+hr {
+  height: 2px;
+  background-color: white;
+  border: none;
+}
+.login input[type="submit"],
+.register input[type="submit"] {
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: var(--white);
+  color: var(--accents);
+  font-weight: bold;
+  cursor: pointer;
+}
+.login input[type="submit"]:hover,
+.register input[type="submit"]:hover {
+  letter-spacing: 2px;
+  transition: 0.5s ease-in-out;
+  background-color: var(--white);
+}
+.login h3,
+.register h3 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 16px;
+}
+.login p {
+  color: white;
+  font-family: "poppins medium";
+  font-size: 12px;
+  margin: 10px 0;
+}
+.login p a {
+  color: white;
+  font-family: "poppins medium";
+  font-size: 12px;
+  font-weight: bold;
+}
